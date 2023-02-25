@@ -1,7 +1,7 @@
 FROM node:18.14.2-alpine3.17   
 
 RUN apk add --no-cache git && \  
-    git clone https://github.com/harshitethic/chatgpt-bot-telegram.git /app && \
+    git clone https://github.com/zhaoguomanong/chatgpt-bot-telegram.git /app && \
     cd /app && \
     npm install                 
 
