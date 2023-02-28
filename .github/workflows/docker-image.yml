@@ -20,6 +20,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PASS }}
       -
+        name: Check directory
+        run: ls scripts/
+      -
         name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
